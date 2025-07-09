@@ -178,21 +178,42 @@
 //         System.out.println(rev);
 //     }
 // }
+// import java.util.*;
+// public class test{
+//     public static void main(String[] args){
+//         HashSet<Integer> set= new HashSet<>();
+//         set.add(6);
+//         set.add(6);
+//         set.add(7);
+//         set.add(8);
+//         set.add(7);
+//         set.remove(8);
+//         System.out.println(set);
+//         if(set.contains(9)){
+//             System.out.println("it is present");
+//         }else{
+//             System.out.println("out of bound");
+//         }
+//     }
+// }
 import java.util.*;
 public class test{
     public static void main(String[] args){
-        HashSet<Integer> set= new HashSet<>();
-        set.add(6);
-        set.add(6);
-        set.add(7);
-        set.add(8);
-        set.add(7);
-        set.remove(8);
-        System.out.println(set);
-        if(set.contains(9)){
+        HashMap<Integer,String> map= new HashMap<>();
+        map.put(10,"Ak");
+        map.put(20,"sh");
+        map.put(30,"ay");
+        System.out.println(map);
+        System.out.println(map.get(10));
+        map.put(30,"sr");
+        //System.out.println(map);
+        if(map.containsKey(20)){
             System.out.println("it is present");
-        }else{
-            System.out.println("out of bound");
         }
+        else{
+            System.out.println("not");
+        }
+
+
     }
 }

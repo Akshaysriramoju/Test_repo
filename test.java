@@ -196,24 +196,52 @@
 //         }
 //     }
 // }
+// import java.util.*;
+// public class test{
+//     public static void main(String[] args){
+//         HashMap<Integer,String> map= new HashMap<>();
+//         map.put(10,"Ak");
+//         map.put(20,"sh");
+//         map.put(30,"ay");
+//         System.out.println(map);
+//         System.out.println(map.get(10));
+//         map.put(30,"sr");
+//         System.out.println(map);
+//         if(map.containsKey(20)){
+//             System.out.println("it is present");
+//         }
+//         else{
+//             System.out.println("not");
+//         }
+
+
+//     }
+// }
 import java.util.*;
 public class test{
+    public static int[] maxandmin(int[] arr){
+        int max=arr[0];
+        int min=arr[0];
+        for(int i=1;i<arr.length;i++){
+            if(arr[i]>max){
+                max=arr[i];
+            }
+            if(arr[i]< min){
+                min=arr[i];
+            }
+        }
+        return new int[] {max,min};
+    }
     public static void main(String[] args){
-        HashMap<Integer,String> map= new HashMap<>();
-        map.put(10,"Ak");
-        map.put(20,"sh");
-        map.put(30,"ay");
-        System.out.println(map);
-        System.out.println(map.get(10));
-        map.put(30,"sr");
-        //System.out.println(map);
-        if(map.containsKey(20)){
-            System.out.println("it is present");
+        Scanner sc=new Scanner(System.in);
+        int a=sc.nextInt();
+        int[] arr=new int[a];
+        for(int i=0;i<a;i++){
+            arr[i]=sc.nextInt();
         }
-        else{
-            System.out.println("not");
-        }
-
-
+        int[] result=maxandmin(arr);
+       System.out.println(result[1]);
+       System.out.println(result[0]);
+           sc.close();
     }
 }

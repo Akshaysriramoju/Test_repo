@@ -245,27 +245,73 @@
 //            sc.close();
 //     }
 // }
-import java.util.*;
+// import java.util.*;
+// public class test{
+//     public static int[] averageandsum(int[] arr){
+//         int sum=arr[0];
+//         int average=arr[0];
+//         for(int i=0;i<arr.length;i++){
+//             sum+=arr[i];
+//         }
+//         average=sum/arr.length;
+//         return new int[] {sum,average};
+//     }
+//     public static void main(String[] args){
+//         Scanner sc=new Scanner(System.in);
+//         int a=sc.nextInt();
+//         int[] arr=new int[a];
+//         for(int i=0;i<a;i++){
+//             arr[i]=sc.nextInt();
+//         }
+//         int[] result=averageandsum(arr);
+//         System.out.println(result[0]);
+//         System.out.println(result[1]); 
+//         sc.close();
+//     }
+// }
+//import java.util.*;
+// public class test{
+//     public static int[] evenOrOdd(int[] arr){
+//         int counteven=0;
+//         int countodd=0;
+//         for(int i=0;i<arr.length;i++){
+//             if(arr[i]%2==0){
+//                 counteven++;
+//             }
+//             if(arr[i]%2!=0){
+//                 countodd++;
+//             }
+//         }
+//         return new int[] {counteven,countodd};
+//     }
+//     public static void main(String[] args){
+//         Scanner sc=new Scanner(System.in);
+//          int a=sc.nextInt();
+//         int[] arr=new int[a];
+//         for(int i=0;i<a;i++){
+//             arr[i]=sc.nextInt();
+//         }
+//         int[] result=evenOrOdd(arr);
+//         System.out.println(result[0]);
+//         System.out.println(result[1]);
+
+//         sc.close();
+
+//     }
+// }
+//import java.util.*;
 public class test{
-    public static int[] averageandsum(int[] arr){
-        int sum=arr[0];
-        int average=arr[0];
-        for(int i=0;i<arr.length;i++){
-            sum+=arr[i];
+public static int findelement(int[] arr){
+    int x=44;
+    for(int i=0;i<=arr.length;i++){
+        if(arr[i]==x){
+            return i;
         }
-        average=sum/arr.length;
-        return new int[] {sum,average};
     }
-    public static void main(String[] args){
-        Scanner sc=new Scanner(System.in);
-        int a=sc.nextInt();
-        int[] arr=new int[a];
-        for(int i=0;i<a;i++){
-            arr[i]=sc.nextInt();
-        }
-        int[] result=averageandsum(arr);
-        System.out.println(result[0]);
-        System.out.println(result[1]); 
-        sc.close();
-    }
+    return 1;
+}
+public static void main(String[] args){
+    int[] arr={10,11,22,33,44};
+    System.out.println(findelement(arr));
+}
 }

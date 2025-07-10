@@ -338,25 +338,44 @@
 //         System.out.println(Arrays.toString(result));
 //     }
 // }
-import java.util.*;
-public class test{
-public static int secondhighest(int[] arr){
-    int highest=0;
-    int secondhighest=0;
-    for(int i=0;i<arr.length;i++){
-       if(arr[i]>highest){
-        secondhighest=highest;
-        highest=arr[i];
-       }
-       else if(arr[i]>secondhighest && arr[i]!=highest){
-        secondhighest=arr[i];
-       }
-    }
-    return secondhighest;
-}
-public static void main(String[] args){
-    int[] arr={3,4,5,6,7,8};
-    int result=secondhighest(arr);
-    System.out.println(result);
-}
-}
+// import java.util.*;
+// public class test{
+// public static int secondhighest(int[] arr){
+//     int highest=0;
+//     int secondhighest=0;
+//     for(int i=0;i<arr.length;i++){
+//        if(arr[i]>highest){
+//         secondhighest=highest;
+//         highest=arr[i];
+//        }
+//        else if(arr[i]>secondhighest && arr[i]!=highest){
+//         secondhighest=arr[i];
+//        }
+//     }
+//     return secondhighest;
+// }
+// public static void main(String[] args){
+//     int[] arr={3,4,5,6,7,8};
+//     int result=secondhighest(arr);
+//     System.out.println(result);
+// }
+// }
+// import java.util.*;
+// public class test{
+//     public static ArrayList<Integer> removeDuplicate(int[] a){
+//         ArrayList<Integer> uniqueval=new ArrayList<>();
+//         for(int i:a){
+//             if(!uniqueval.contains(i)){
+//                 uniqueval.add(i);
+//             }
+//         }
+//         return uniqueval;
+//     }
+//     public static void main(String[] args){
+//         int[] a={1,2,3,3,4,4,5,5};
+
+//         ArrayList <Integer> result=removeDuplicate(a);
+//         System.out.println(result);
+       
+//     }
+// }

@@ -217,20 +217,44 @@
 
 //     }
 // }
+// import java.util.*;
+// public class test{
+//     public static int[] maxandmin(int[] arr){
+//         int max=arr[0];
+//         int min=arr[0];
+//         for(int i=1;i<arr.length;i++){
+//             if(arr[i]>max){
+//                 max=arr[i];
+//             }
+//             if(arr[i]< min){
+//                 min=arr[i];
+//             }
+//         }
+//         return new int[] {max,min};
+//     }
+//     public static void main(String[] args){
+//         Scanner sc=new Scanner(System.in);
+//         int a=sc.nextInt();
+//         int[] arr=new int[a];
+//         for(int i=0;i<a;i++){
+//             arr[i]=sc.nextInt();
+//         }
+//         int[] result=maxandmin(arr);
+//        System.out.println(result[1]);
+//        System.out.println(result[0]);
+//            sc.close();
+//     }
+// }
 import java.util.*;
 public class test{
-    public static int[] maxandmin(int[] arr){
-        int max=arr[0];
-        int min=arr[0];
-        for(int i=1;i<arr.length;i++){
-            if(arr[i]>max){
-                max=arr[i];
-            }
-            if(arr[i]< min){
-                min=arr[i];
-            }
+    public static int[] averageandsum(int[] arr){
+        int sum=arr[0];
+        int average=arr[0];
+        for(int i=0;i<arr.length;i++){
+            sum+=arr[i];
         }
-        return new int[] {max,min};
+        average=sum/arr.length;
+        return new int[] {sum,average};
     }
     public static void main(String[] args){
         Scanner sc=new Scanner(System.in);
@@ -239,9 +263,9 @@ public class test{
         for(int i=0;i<a;i++){
             arr[i]=sc.nextInt();
         }
-        int[] result=maxandmin(arr);
-       System.out.println(result[1]);
-       System.out.println(result[0]);
-           sc.close();
+        int[] result=averageandsum(arr);
+        System.out.println(result[0]);
+        System.out.println(result[1]); 
+        sc.close();
     }
 }

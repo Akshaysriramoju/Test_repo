@@ -379,3 +379,37 @@
        
 //     }
 // }
+// import java.util.*;
+// public class test{
+//     public static LinkedHashMap<Integer,Integer> frequncyOfNumber(int[] a){
+//         LinkedHashMap<Integer,Integer> arr=new LinkedHashMap<>();
+//         for(int num:a){
+//             arr.put(num,arr.getOrDefault(num,0)+1);
+//         }
+//         return arr;
+//     }
+//     public static void main(String[] args){
+//         int[] a={1,2,2,3,3,4,4,4,5};
+//         LinkedHashMap<Integer,Integer> result=frequncyOfNumber(a);
+//         System.out.println(result);
+        
+// }
+// }
+//  for (Map.Entry<Integer, Integer> entry : result.entrySet()) {
+//             System.out.println(entry.getKey() + " : " + entry.getValue());
+// import java.util.*;
+// public class test{
+//     public static LinkedHashMap<String,Integer> countwords(String[] users){
+//         LinkedHashMap<String,Integer> arr= new LinkedHashMap<>();
+//         for(String words:users){
+//             arr.put(words,arr.getOrDefault(words,0)+1);
+//         }
+//         return arr;
+//     }
+//     public static void main(String[] args){
+//         // String line="turtle never won for speed, but for won never patience";
+//         String[] users={"akshay","turtle","won","for","speed","never"};
+//         LinkedHashMap<String,Integer> result=countwords(users);
+//         System.out.println(result);
+//     }
+// }

@@ -414,24 +414,4 @@
 //         System.out.println("hello");
 //     }
 // }
-import java.util.*;
-public class test{
-    public static LinkedHashMap<String,Integer> countwords(String[] users){
-        LinkedHashMap<String,Integer> arr= new LinkedHashMap<>();
-        for(String words:users){
-            arr.put(words,arr.getOrDefault(words,0)+1);
-        }
-        return arr;
-    }
-    public static void main(String[] args){
-        // String line="turtle never won for speed, but for won never patience";
-        String[] users={"akshay","turtle","won","for","speed","never"};
-        LinkedHashMap<String,Integer> result=countwords(users);
-        System.out.println(result);
-        System.out.println("hello");
-        System.out.println("hello");
-        System.out.println("hello");
-        System.out.println("hello");
-        
-    }
-}
+

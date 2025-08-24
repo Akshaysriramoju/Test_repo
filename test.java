@@ -414,24 +414,271 @@
 //         System.out.println("hello");
 //     }
 // }
-import java.util.*;
-public class test{
-    public static LinkedHashMap<String,Integer> countwords(String[] users){
-        LinkedHashMap<String,Integer> arr= new LinkedHashMap<>();
-        for(String words:users){
-            arr.put(words,arr.getOrDefault(words,0)+1);
-        }
-        return arr;
-    }
-    public static void main(String[] args){
-        // String line="turtle never won for speed, but for won never patience";
-        String[] users={"akshay","turtle","won","for","speed","never"};
-        LinkedHashMap<String,Integer> result=countwords(users);
-        System.out.println(result);
-        System.out.println("hello");
-        System.out.println("hello");
-        System.out.println("hello");
-        System.out.println("hello");
+// import java.util.*;
+// public class test{
+//     public static LinkedHashMap<String,Integer> countwords(String[] users){
+//         LinkedHashMap<String,Integer> arr= new LinkedHashMap<>();
+//         for(String words:users){
+//             arr.put(words,arr.getOrDefault(words,0)+1);
+//         }
+//         return arr;
+//     }
+//     public static void main(String[] args){
+//         // String line="turtle never won for speed, but for won never patience";
+//         String[] users={"akshay","turtle","won","for","speed","never"};
+//         LinkedHashMap<String,Integer> result=countwords(users);
+//         System.out.println(result);
+//         System.out.println("hello");
+//         System.out.println("hello");
+//         System.out.println("hello");
+//         System.out.println("hello");
         
-    }
-}
+//     }
+// }
+// import java.util.*;
+// public class test{
+//     public static int reversenumber(int a){
+//         if(a==0){
+//             return 0;
+//         }
+//         int sum=0;
+//         a=Math.abs(a);
+//         while(a!=0){
+//             int digit=a%10;
+//             sum+=digit;
+//             a=a/10;
+//         }
+//         return sum;
+
+//     }
+//     public static void main(String[] args){
+//         Scanner sc =new Scanner (System.in);
+//         int a=sc.nextInt();
+//         int result=(reversenumber(a));
+//         System.out.println(result);
+//     }
+// }
+// import java.util.*;
+
+// public class test {
+//     public static int reversenumber(int a){
+//     if(a==0){
+//         return 0;
+//     }
+//     int reversed=0;
+//     a=Math.abs(a);
+//     while(a!=0){
+//         int digit=a%10;
+//         reversed=reversed*10+digit;
+//         a=a/10;
+//     }
+//     return reversed;
+// }
+
+//     public static void main(String[] args) {
+//         Scanner sc =new Scanner (System.in);
+//         int a =sc.nextInt();
+//         int result=(reversenumber(a));
+//         System.out.println(result);
+//     }
+// }
+// import java.util.*;
+
+// public class test {
+//     public static String reversestring(String a){
+//         char[] b= a.toCharArray();
+//         String reversed="";
+//         for(int i=b.length-1;i>=0;i--){
+//             reversed+=b[i];
+//         }
+//         return reversed;
+//     }
+//     public static void main(String[] args) {
+//         Scanner sc =new Scanner (System.in);
+//         String a=sc.nextLine();
+//         String result=(reversestring(a));
+//         System.out.println(result);
+//     }
+// }
+// import java.util.*;
+
+// public class test {
+//     public static int factorial(int a){
+//         if(a==0){
+//             return 1;
+//         }
+//         return a*factorial(a-1);
+//     }
+//     public static void main(String[] args) {
+//         Scanner sc =new Scanner (System.in);
+//         int a=sc.nextInt();
+//         int result=(factorial(a));
+//         System.out.println(result);
+//     }
+// }
+// import java.util.*;
+
+// public class test {
+//     public static String palindrome(String a){
+//         char [] b=a.toCharArray();
+//         int i=0;
+//         int j=a.length()-1;
+//         while(i<j){
+//             if(a.charAt(i)!=a.charAt(j)){
+//                 return "not a palin";
+//             }
+//             i++;
+//             j--;
+//         }
+//         return "palin";
+//     }
+//     public static void main(String[] args) {
+//         Scanner sc =new Scanner (System.in);
+//         String a=sc.nextLine();
+//         String result=(palindrome(a));
+//         System.out.println(result);
+//     }
+// }
+// import java.util.*;
+
+// public class test {
+//     // Sorting the array using bubble sort
+//     public static void sort(int[] b) {
+//         int c = b.length;
+//         int temp = 0;
+//         for (int i = 0; i < c - 1; i++) {
+//             for (int j = 0; j < c - i - 1; j++) {
+//                 if (b[j] > b[j + 1]) {
+//                     temp = b[j];
+//                     b[j] = b[j + 1];
+//                     b[j + 1] = temp;
+//                 }
+//             }
+//         }
+//     }
+
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         int n = sc.nextInt();
+//         int[] a = new int[n];
+//         for (int i = 0; i < n; i++) {
+//             a[i] = sc.nextInt();
+//         }
+//         sort(a);
+//         for (int i = 0; i < n; i++) {
+//             System.out.print(a[i] + " ");
+//         }
+//     }
+// }
+// import java.util.*;
+
+// public class test {
+//     public static int secondhighest(int[] b){
+//        int highest=0;
+//        int secondhighest=0;
+//        for(int i:b){
+//         if(i>highest){
+//             secondhighest=highest;
+//             highest=i;
+//         }
+//         if(i<highest&&i>secondhighest){
+//             secondhighest=i;
+//         }
+//        }
+//        return secondhighest;
+
+//     }
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         int a=sc.nextInt();
+//         int[] b =new int[a];
+//         for (int i=0;i<a;i++){
+//             b[i]=sc.nextInt();
+//         }
+//         int result=secondhighest(b);
+//         System.out.println(result);
+
+//     }
+// }
+// import java.util.*;
+
+// public class test {
+//     public static void fibanocci(int a){
+//         if(a==0){
+//             System.out.println("0");
+//         }
+//         int b=0,c=1,d=0;
+//         for(int i=0;i<a;i++){
+//             System.out.println(b);
+//             d=b+c;
+//             b=c;
+//             c=d;
+//         }
+//     }
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         int a=sc.nextInt();
+//         fibanocci(a);
+//     }
+// }
+// import java.util.*;
+
+// public class test {
+//     public static int fibonaccirecursive(int n) {
+//         if(n==0) return 0;
+//         if(n==1) return 1;
+//         return fibonaccirecursive(n-1)+fibonaccirecursive(n-2);
+//     }
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         int n=sc.nextInt();
+//         int result=fibonaccirecursive(n);
+//         System.out.println(result);
+//     }
+// }
+// import java.util.*;
+
+// public class test {
+//     public static String binarytodecimal(String a){
+//         int power=0;
+//         int decimal=0;
+//         for(int i=a.length()-1;i>=0;i--){
+//             if(a.charAt(i)=='1'){
+//                 decimal+=Math.pow(2,power);
+//             }
+//             power++;
+//         }
+//         return String.valueOf(decimal);
+//     }
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         String a =sc.nextLine();
+//         String result=(binarytodecimal(a));
+//         System.out.println(result);
+
+//     }
+// }
+
+// import java.util.*;
+
+// public class test {
+//     public static String decimaltobinary(int a){
+//         if(a==0){
+//             return "0";
+//         }
+//         String binary="";
+//         while(a>0){
+//             binary=(a%2)+binary;
+//             a=a/2;
+//         }
+//         return binary;
+//     }
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         int a=sc.nextInt();
+//         String result=(decimaltobinary(a));
+//         System.out.println(result);
+
+//     }
+// }
+

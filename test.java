@@ -681,3 +681,76 @@
 
 //     }
 // }
+// import java.util.*;
+
+// public class test {
+//        public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         int a=sc.nextInt();
+//         int b=sc.nextInt();
+//         a=a+b;
+//         b=a-b;
+//         a=a-b;
+//         System.out.println("a"+a+",b"+b);
+//     }
+// }
+// import java.util.*;
+
+// public class test {
+//     public static LinkedHashMap<Character,Integer> count(String[] a){
+//         LinkedHashMap<Character,Integer> count=new LinkedHashMap<>();
+//         for (String word : a) {
+//             for (char c : word.toCharArray()) {
+//                 count.put(c, count.getOrDefault(c, 0) + 1);
+//             }
+//         }
+//         return count;
+//     }
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         String[] a ={"hello","world"};
+//         LinkedHashMap<Character,Integer> result=count(a);
+//         System.out.println(result);
+//     }
+// }
+//selection sort
+// import java.util.*;
+// public class test{
+//     public static void main(String[] args){
+//         int[] arr={1,4,2,6,8};
+//         int n=arr.length;
+//         for(int i=0;i<n-1;i++){
+//             int minvalue=i;
+//             for(int j=i+1;j<n;j++){
+//                 if(arr[j]<arr[minvalue]){
+//                     minvalue=j;
+//                 }
+//             }
+//             int temp=arr[i];
+//             arr[i]=arr[minvalue];
+//             arr[minvalue]=temp;
+//         }
+//         for(int k=0;k<n;k++){
+//         System.out.println(arr[k]);
+//         }
+//     }
+// }
+// import java.util.*;
+// public class test{
+//     public static void main(String[] args){
+//         int[] arr={1,3,2,6,4,8};
+//         int n=arr.length;
+//         for(int i=1;i<n;i++){
+//             int key=arr[i];
+//             int j=i-1;
+//             while(j>=0&&arr[j]>key){
+//                 arr[j+1]=arr[j];
+//                 j--;
+//             }
+//             arr[j+1]=key;
+//         }
+//         for(int k=0;k<n;k++){
+//             System.out.println(arr[k]);
+//         }
+//     }
+// }

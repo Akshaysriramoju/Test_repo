@@ -414,7 +414,6 @@
 //         System.out.println("hello");
 //     }
 // }
-<<<<<<< HEAD
 // import java.util.*;
 // public class test{
 //     public static LinkedHashMap<String,Integer> countwords(String[] users){

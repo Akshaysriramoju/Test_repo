@@ -754,3 +754,138 @@
 //         }
 //     }
 // }
+// import java.util.*;
+// public class test {
+// public static void main(String[] args){
+//     int[] a={1,4,2,6,8,3};
+//     int target=3;
+//     int result=findingelement(a, target);
+//     System.out.println(result);
+// }
+// static int findingelement(int[] a, int target){
+//     if(a.length==0){
+//         return 0;
+//     }
+//         for(int i=0;i<=a.length;i++){
+//             int element=a[i];
+//             if(element==target){
+//                 return i;
+//             }
+//         }
+//         return -1;
+// }
+// }
+// import java.util.*;
+// public class test{
+//     public static void main(String[] args){
+//         String a="abcdefg";
+//         char target='g';
+//         int result=findinginString(a, target);// (0,5)
+//         System.out.println(result);
+
+// }
+// static int findinginString(String a, char target){ //(int start, int end)
+//     if(a==null){
+//         return 0;
+//     }
+//     // char targetchar= target.charAt(0);
+//     for(int i=0;i<a.length();i++){ //for(int i=start;i<end;i++)
+//     if(a.charAt(i)==target){
+//         return i;
+//     }
+// }
+// return -1;
+
+// }
+// }
+// import java.util.*;
+// public class test{
+//     public static void main(String[] args){
+//         Scanner sc=new Scanner(System.in);
+//        int[][] a={
+//             {1,2,3,4},
+//             {5,6},
+//             {7,8,9}
+//        };
+//        int target=sc.nextInt(); 
+//         int[] result=search(a, target);
+//         System.out.println(Arrays.toString(result));
+
+//     }
+//     static int[] search(int[][] a, int target){
+//         for(int i=0;i<a.length;i++){
+//             for(int j=0;j<a[i].length;j++){
+//             if(a[i][j]==target){
+//                 return new int[]{i,j};
+//             }
+//         }
+//         }
+//         return new int[]{-1,-1};
+//     }
+// }
+// import java.util.*;
+// public class test{
+//     public static void main(String[] args){
+//         int[] a={1,9,3,4,5,6};
+//         int[] result=even(a);
+//         System.out.println(Arrays.toString(result));
+//     }
+//     static int[] even(int[] a){
+//         if(a.length==0){
+//             return new int[]{0};
+//         }
+//         int count=0;
+//         for(int i:a){
+//             if(i%2==0){
+//                 count++;
+//             }
+//         }
+//         return new int[]{count};
+//     }
+// }
+// import java.util.*;
+// public class test{
+//     public static void main(String[] args){
+//         int[] a={2,45,123,4325};
+//         int result=evencount(a);
+//         System.out.println(result);
+//     }
+//     static int evencount(int[] a){
+//         if(a.length==0){
+//             return 0;
+//         }
+//         int count=0;
+//         for(int i:a){
+//             String str=Integer.toString(i);
+//             if(str.length()%2==0){
+//                 count++;
+//             }
+//         }
+//         return count;
+//     }
+// }
+// import java.util.*;
+// public class test{
+//     public static void main(String[] args){
+//         int[][] a={
+//             {1,2,4},
+//             {4,5,6},
+//             {7,8,9}
+//         };
+//         int result=sumofrow(a);
+//         System.out.println(result);
+//     }
+//     static int sumofrow(int[][] a){
+//         int max=0;
+//         for(int i=0;i<a.length;i++){
+//             int sum=0;
+//             for(int j=0;j<a[i].length;j++){
+//                 sum+=a[i][j];
+//             }
+//             if(sum>max){
+//                 max=sum;
+//             }
+//         }
+//         return max;
+//     }
+// }

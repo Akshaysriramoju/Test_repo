@@ -120,10 +120,7 @@
 //         sc.close();
 //     }
 // }
-<<<<<<< HEAD
 // AMSTRONG NUMBER
-=======
->>>>>>> 13157322f2994971302974504c89fc46677b4735
 // import java.util.*;
 // public class test{
 //     public static void main(String[] args){
@@ -282,7 +279,6 @@
 //         for(int i=0;i<arr.length;i++){
 //             if(arr[i]%2==0){
 //                 counteven++
-//                 counteven++;
 //             }
 //             if(arr[i]%2!=0){
 //                 countodd++;
